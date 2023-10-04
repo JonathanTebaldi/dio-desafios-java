@@ -9,13 +9,14 @@ public class ContaTerminal {
         System.out.println("Digite o número da agência:");
         int numero = sc.nextInt();
         System.out.println("Digite a agência: ");
-        String agencia = sc.nextLine();
+        String agencia = sc.next();
         System.out.println("Digite seu nome: ");
-        String nome = sc.nextLine();
+        String nome = sc.next();
         System.out.println("Digite seu saldo: ");
         double saldo = sc.nextDouble();
 
         //Exibir a mensagem conta criada
-
+        System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia +
+                ", conta " +  numero + " e seu saldo " + saldo + " já está disponível para saque.");
     }
 }
